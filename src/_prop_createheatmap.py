@@ -76,8 +76,6 @@ def cluster_corr(corr_array, inplace=False):
 @click.option('--_distance', type=str)
 
 
-# @click.option('--features', type=int)
-
 
 def main(_arraylength, _relevant, _trials, _distance = 'normal'):
     

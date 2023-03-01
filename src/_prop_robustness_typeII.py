@@ -108,7 +108,6 @@ def main(_arraylength, _trials, _relevant, _distance):
                      
             m = metrics.index(met)
             
-#             print(_difference)
             if np.abs(_difference) >  1e-6:
                 count[m] += 1
     
@@ -116,13 +115,11 @@ def main(_arraylength, _trials, _relevant, _distance):
     
     for s in range(len(count)):
         if count[s] == 0:
-            print(metrics_names[s])
             my_file.write(metrics_names[s] + '\n')
             
     my_file.close()
 
     count = count*100/_trials
-    print(count)
 
     my_file = open(output_where1, "w")
     np.savetxt(my_file, count.astype('int32'), fmt="%d")

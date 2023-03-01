@@ -120,11 +120,7 @@ def main(_arraylength, _trials, _distance):
                             n = met(S, R)
                             ntilde = met(S_tilde, R)
                             diff_ = np.abs(n - ntilde)
-                        
-#                         print(n)
 
-#                         print(diff_)
-#                         print(np.sum(S == S_tilde))
                         m = metrics.index(met)
                         count[m] += diff_ 
         
@@ -134,19 +130,6 @@ def main(_arraylength, _trials, _distance):
         for s in range(len(count2)):
             my_file.write(metrics_names[s] + ':\t' + str(count2[s]) + '\n')
         my_file.close()
-
-
-        
-    
-    
-#     count2 = list(np.array(count)/dividend)
-
-    
-#     my_file = open(output_where, "w")
-#     for s in range(len(count)):
-#         my_file.write(metrics_names[s] + ':\t' + str(count[s]) + '\n')
-#     my_file.close()
-
     
     
     

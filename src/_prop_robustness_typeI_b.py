@@ -138,16 +138,6 @@ def main(_arraylength, _trials, _distance):
 
     
     
-#     count = list(np.array(count)/dividend)
-
-    
-#     my_file = open(output_where, "w")
-#     for s in range(len(count)):
-#         my_file.write(metrics_names[s] + ':\t' + str(count[s]) + '\n')
-#     my_file.close()
-
-    
-    
     
     
 if __name__ == '__main__':

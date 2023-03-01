@@ -98,7 +98,7 @@ def main(_arraylength, _relevant, _trials, _distance):
                 if abs(met(S, R1, _relevant) - met(S, R2, _relevant)) < 1e-6:
                     coincident = True
             else:
-                if abs(met(S, R1) - met(S, R2)) < 1e-6:
+                if abs(met(S, R1) - met(S, R2)) < 1e-6: # use some approximation for equality
                     coincident = True
                     
                    
